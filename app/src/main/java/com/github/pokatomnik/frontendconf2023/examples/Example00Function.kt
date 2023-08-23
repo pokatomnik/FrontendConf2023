@@ -3,6 +3,18 @@ package com.github.pokatomnik.frontendconf2023.examples
 import android.util.Log
 
 /**
+ * Соответствие типов Typescript -> Kotlin
+ * ====================================================
+ *          TS                    Kotlin
+ *        boolean                 Boolean
+ *        number            Int, Float, Double
+ *        string                  String
+ *    undefined/void               Unit
+ *         null         Только отдельные nullable-типы.
+ * ====================================================
+ */
+
+/**
  * Простой класс с данными и 1 методом
  * Private -- класс доступен только внутри этого файла
  */
