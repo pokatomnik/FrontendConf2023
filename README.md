@@ -5,6 +5,7 @@
 2. [Как выглядит компонент в Jetpack Compose](/app/src/main/java/com/github/pokatomnik/frontendconf2023/examples/Example01Composable.kt)
 3. [Как стилизовать компоненты](/app/src/main/java/com/github/pokatomnik/frontendconf2023/examples/Example02Styles.kt)
 4. [Управление состоянием](/app/src/main/java/com/github/pokatomnik/frontendconf2023/examples/Example03State.kt)
+5. [Render prop](/app/src/main/java/com/github/pokatomnik/frontendconf2023/examples/Example04RenderProp.kt)
 
 ## Послезные ссылки
 
