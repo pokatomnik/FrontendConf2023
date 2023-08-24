@@ -7,6 +7,7 @@
 4. [Управление состоянием](/app/src/main/java/com/github/pokatomnik/frontendconf2023/examples/Example03State.kt)
 5. [Render prop](/app/src/main/java/com/github/pokatomnik/frontendconf2023/examples/Example04RenderProp.kt)
 6. [Memoization](/app/src/main/java/com/github/pokatomnik/frontendconf2023/examples/Example05Memoization.kt)
+7. [Side effects](/app/src/main/java/com/github/pokatomnik/frontendconf2023/examples/Example06SideEffects.kt)
 
 ## Послезные ссылки
 
