@@ -11,6 +11,7 @@
 8. [Effects with cleanup](/app/src/main/java/com/github/pokatomnik/frontendconf2023/examples/Example07DisposableEffect.kt)
 9. [Conditional rendering](/app/src/main/java/com/github/pokatomnik/frontendconf2023/examples/Example08ConditionalRendering.kt)
 10. [Списки](/app/src/main/java/com/github/pokatomnik/frontendconf2023/examples/Example09Lists.kt)
+11. [Key](/app/src/main/java/com/github/pokatomnik/frontendconf2023/examples/Example10Key.kt)
 
 ## Послезные ссылки
 
