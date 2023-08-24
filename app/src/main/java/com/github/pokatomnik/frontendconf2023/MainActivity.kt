@@ -12,9 +12,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.github.pokatomnik.frontendconf2023.ui.theme.FrontendConf2023Theme
 
+// Активити - окно, Window в терминах веба. У него есть свой lifecycle, их может быть много
 class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun onCreate(savedInstanceState: Bundle?) { // Запускаем наше Jetpack Compose приложение тут
+        super.onCreate(savedInstanceState) // восстанавливаем состояние если оно было сохранено ранее
+        /**
+         * Аналог createRoot / ReactDOM.render
+         * Передает рутовый Jetpack Compose компонент в активити, заставляя ее рендерить этот компонент
+         */
         setContent {
             FrontendConf2023Theme {
                 // A surface container using the 'background' color from the theme
