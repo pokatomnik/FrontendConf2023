@@ -8,6 +8,7 @@
 5. [Render prop](/app/src/main/java/com/github/pokatomnik/frontendconf2023/examples/Example04RenderProp.kt)
 6. [Memoization](/app/src/main/java/com/github/pokatomnik/frontendconf2023/examples/Example05Memoization.kt)
 7. [Side effects](/app/src/main/java/com/github/pokatomnik/frontendconf2023/examples/Example06SideEffects.kt)
+8. [Effects with cleanup](/app/src/main/java/com/github/pokatomnik/frontendconf2023/examples/Example07DisposableEffect.kt)
 
 ## Послезные ссылки
 
