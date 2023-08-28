@@ -16,6 +16,10 @@ data class User(
 
 @Composable
 fun Example09Lists(list: Collection<User>) {
+    /**
+     * Так делать плохо. Для списков лучше подойдут виртуальные списки
+     * LazyColumn / LazyRow
+     */
     Column(modifier = Modifier.fillMaxSize()) {
         list.forEach { user -> // .map нам не нужен, так как мы не возвращаем ничего
             Row(modifier = Modifier.fillMaxWidth()) {
