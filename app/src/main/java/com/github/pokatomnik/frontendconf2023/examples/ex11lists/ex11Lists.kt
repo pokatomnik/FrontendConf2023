@@ -1,4 +1,4 @@
-package com.github.pokatomnik.frontendconf2023.examples
+package com.github.pokatomnik.frontendconf2023.examples.ex11lists
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -8,20 +8,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 
-data class User(
-    val firstName: String,
-    val lastName: String,
-    val middleName: String? = null
-)
-
 @Composable
-fun Example09Lists(list: Collection<User>) {
-    /**
-     * Так делать плохо. Для списков лучше подойдут виртуальные списки
-     * LazyColumn / LazyRow
-     */
+fun Example11Lists(list: Collection<User>) {
     Column(modifier = Modifier.fillMaxSize()) {
-        list.forEach { user -> // .map нам не нужен, так как мы не возвращаем ничего
+        list.forEach { user ->
             Row(modifier = Modifier.fillMaxWidth()) {
                 Text(text = user.firstName)
                 Text(text = user.lastName)

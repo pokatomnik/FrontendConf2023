@@ -1,4 +1,4 @@
-package com.github.pokatomnik.frontendconf2023.examples
+package com.github.pokatomnik.frontendconf2023.examples.ex10conditionalrendering
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -9,14 +9,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun Example08ConditionalRendering(
+fun Example10ConditionalRendering(
     userName: String?,
     total: Int?,
 ) {
-    Row(modifier = Modifier.fillMaxWidth().height(48.dp)) { // Сделаем вид что это хедер
+    Row(modifier = Modifier.fillMaxWidth().height(48.dp)) {
         if (userName != null) {
-            Text(text = userName) // Вот тут тип userName -- String а не String?
+            Text(text = userName)
         }
-        Text(text = if (total == null) "Empty" else "Total: $total") // if является выражением
+        Text(text = if (total == null) "Empty" else "Total: $total")
     }
 }

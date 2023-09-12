@@ -1,0 +1,11 @@
+.row {
+  display: flex;
+  flex: 1;
+  background-color: blue;
+  padding: 0 16px 0 4px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
