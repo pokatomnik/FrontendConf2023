@@ -8,9 +8,14 @@ import androidx.compose.runtime.remember
 @Composable
 fun <T : Any>Example06RenderProp(
     initialState: T,
-    children: @Composable (value: T, setValue: (value: T) -> Unit) -> Unit
+    children: @Composable (
+        value: T,
+        setValue: (value: T) -> Unit
+    ) -> Unit
 ) {
-    val (value, setValue) = remember { mutableStateOf(initialState) }
+    val (value, setValue) = remember {
+        mutableStateOf(initialState)
+    }
     Row {
         children(value, setValue)
     }
