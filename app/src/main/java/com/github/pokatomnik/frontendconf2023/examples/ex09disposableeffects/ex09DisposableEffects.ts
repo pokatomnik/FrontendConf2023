@@ -3,10 +3,14 @@ const toastStub = () => {
 };
 
 interface PubSub {
-  subscribe(subscriber: (value: String) => void): () => void;
+  subscribe(
+    subscriber: (value: String) => void
+  ): () => void;
 }
 
-const useShowToast = (props: { readonly pubSub: PubSub }) => {
+const useShowToast = (props: {
+  readonly pubSub: PubSub
+}) => {
   const { pubSub } = props;
   React.useEffect(() => {
     const unsubscribe = pubSub.subscribe(toastStub);

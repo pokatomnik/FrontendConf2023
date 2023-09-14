@@ -1,4 +1,6 @@
-import { localThemeContext as LocalThemeContext } from "./ex13Context";
+import {
+  localThemeContext as LocalThemeContext
+} from "./ex13Context";
 import { Theme, ThemeId } from "./ex13ContextValue";
 
 namespace React {
@@ -7,7 +9,9 @@ namespace React {
   };
 }
 
-export const ThemeProvider = (props: React.PropsWithChildren<object>) => {
+export const ThemeProvider = (
+  props: React.PropsWithChildren<object>
+) => {
   const { children } = props;
   const [themeId, setThemeId] = React.useState(ThemeId.LIGHT);
   const themeContextValue = React.useMemo(() => {

@@ -7,5 +7,7 @@ enum class ThemeId {
 
 data class Theme(
     val themeId: ThemeId,
-    val onThemeChange: (themeId: ThemeId) -> Unit,
+    val onThemeChange: (
+        themeId: ThemeId
+    ) -> Unit,
 )

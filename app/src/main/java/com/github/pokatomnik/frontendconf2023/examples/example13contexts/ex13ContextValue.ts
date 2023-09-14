@@ -6,6 +6,8 @@ export enum ThemeId {
 export class Theme {
   public constructor(
     public readonly themeId: ThemeId,
-    public readonly onThemeChange: (themeId: ThemeId) => void
+    public readonly onThemeChange: (
+      themeId: ThemeId
+    ) => void
   ) {}
 }

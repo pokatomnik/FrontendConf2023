@@ -13,10 +13,18 @@ fun Example10ConditionalRendering(
     userName: String?,
     total: Int?,
 ) {
-    Row(modifier = Modifier.fillMaxWidth().height(48.dp)) {
+    Row(
+        modifier = Modifier.fillMaxWidth().height(48.dp)
+    ) {
         if (userName != null) {
             Text(text = userName)
         }
-        Text(text = if (total == null) "Empty" else "Total: $total")
+        Text(
+            text = if (total == null) {
+                "Empty"
+            } else {
+                "Total: $total"
+            }
+        )
     }
 }

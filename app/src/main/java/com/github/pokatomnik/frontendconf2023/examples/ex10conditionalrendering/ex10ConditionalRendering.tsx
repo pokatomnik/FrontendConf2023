@@ -5,9 +5,14 @@ export const Example10ConditionalRendering = (props: {
   const { userName, total } = props;
   return (
     <div className={styles.header}>
-      {userName !== null && userName !== undefined && <span>{userName}</span>}
+      {userName !== null && userName !== undefined && (
+        <span>{userName}</span>
+      )}
       <span>
-        {total === null || total === undefined ? "Empty" : `Total: ${total}`}
+        {total === null || total === undefined
+          ? "Empty"
+          : `Total: ${total}`
+        }
       </span>
     </div>
   );
